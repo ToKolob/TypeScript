@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typescript</title>
+</head>
+<body>
+  <h1>Typescript</h1>
+  <h2>Introduction</h2>
+  <h1>TypeScript</h1>
+<h2>What you will learn</h2>
+<ul>
+  <li>What is TypeScript
+    <ul>
+      <li>What it is used for</li>
+      <li>When to use it</li>
+    </ul>
+  </li>
+  <li>How to install and configure
+    <ul>
+      <li>Step by step</li>
+      <li>Advantages</li>
+    </ul>
+  </li>
+  <li>Typing
+    <ul>
+      <li>What it is</li>
+      <li>How it works</li>
+      <li>Create custom types</li>
+    </ul>
+  </li>
+  <li>Object-Oriented Programming</li>
+  <li>Functional Programming</li>
+</ul>
+<h2>What you need to know</h2>
+<ul>
+  <li>Have Node.js installed</li>
+  <li>Basic knowledge of JavaScript
+    <ul>
+      <li>Same syntax and way of working</li>
+      <li>Study JavaScript first if you don't know</li>
+    </ul>
+  </li>
+</ul>
+<h2>Introduction</h2>
+<ul>
+  <li>TypeScript adds features to JavaScript</li>
+  <li>Let's see its installation and usage in practice</li>
+  <li>Let's understand the advantages it brings</li>
+  <li>We will also learn more advanced topics such as OOP and functional programming</li>
+</ul>
+<h2>What is TypeScript?</h2>
+<p>TypeScript is a superset of JavaScript developed by Microsoft, adding optional static typing to the language.</p>
+
+<h2>Why Use TypeScript?</h2>
+<ol>
+  <li><strong>Static Typing:</strong> Helps catch errors early and improves code quality.</li>
+  <li><strong>Maintainability:</strong> Provides better documentation and code understanding.</li>
+  <li><strong>Tooling Support:</strong> Integrates well with popular IDEs and offers enhanced features.</li>
+  <li><strong>ECMAScript Compatibility:</strong> Aligns with JavaScript standards, ensuring compatibility.</li>
+  <li><strong>Community Support:</strong> Widely adopted with strong library typings.</li>
+  <li><strong>Gradual Adoption:</strong> Can be introduced gradually into existing projects.</li>
+</ol>
+
+<h2>Main Theme</h2>
+<p>Comparison between JavaScript and TypeScript features and their relationship</p>
+
+<h3>Same Basic Syntax</h3>
+<ul>
+  <li>Variable declaration</li>
+  <li>Logical and arithmetic operators</li>
+  <li>Conditional and loop structures</li>
+  <li>Functions</li>
+  <li>Objects</li>
+  <li>Promises</li>
+</ul>
+
+<h3>ES6+ Support</h3>
+<ul>
+  <li>Classes</li>
+  <li>Arrow functions</li>
+  <li>Async/await</li>
+</ul>
+
+<h3>Typing</h3>
+<ul>
+  <li>
+    <p>Javascript: Weak and dynamic typing</p>
+    <ul>
+      <li>No need to declare type</li>
+      <li>Type can change dynamically</li>
+    </ul>
+  </li>
+  <li>
+    <p>Typescript: Strong and static typing</p>
+    <ul>
+      <li>Variables have defined types</li>
+      <li>Type cannot change without specific methods</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Functioning</h3>
+<ul>
+  <li>
+    <p>Javascript:</p>
+    <ul>
+      <li>Runs on any modern browser</li>
+    </ul>
+  </li>
+  <li>
+    <p>Typescript:</p>
+    <ul>
+      <li>Does not run in browsers</li>
+      <li>Needs to be compiled to JavaScript</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>With Node.js</h3>
+<ul>
+  <li>
+    <p>Javascript:</p>
+    <ul>
+      <li>Node's standard language</li>
+    </ul>
+  </li>
+  <li>
+    <p>Typescript:</p>
+    <ul>
+      <li>Also doesn't run in Node</li>
+      <li>Needs to be compiled to JavaScript</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Conclusion</h3>
+<ul>
+  <li>Advantages of TypeScript are more development-related</li>
+  <li>Needs to be compiled to JavaScript to execute</li>
+</ul>
+
+<h2>Typing</h2>
+<ul>
+  <li>For variables</li>
+  <li>For objects</li>
+  <li>For function parameters</li>
+  <li>For function returns</li>
+</ul>
+
+<h2>Type and Interface Creation</h2>
+<ul>
+  <li>TypeScript provides built-in types</li>
+  <li>But let's create our own types and interfaces</li>
+</ul>
+
+<h2>Error Checking</h2>
+<ul>
+  <li>By the IDE while writing code</li>
+  <li>Errors appear almost immediately</li>
+</ul>
+
+<h2>Autocomplete Function</h2>
+<ul>
+  <li>As in VS Code</li>
+  <li>We have documentation at hand during programming</li>
+  <li>No need to leave the IDE to consult docs</li>
+</ul>
+
+<h2>Documentation and Support</h2>
+<ul>
+  <li>TS website has excellent, well-organized documentation</li>
+  <li>Large community using TS</li>
+  <li>Easy to find help and solutions</li>
+</ul>
+
+<p>These are some of the main features of TypeScript that we will frequently use. They bring various advantages to development, such as typing, error checking, autocompletion, along with excellent documentation and community support.</p>
+
+<h2>Primitive Types</h2>
+<ul>
+  <li>Are the most basic types in TypeScript</li>
+  <li>Equivalent to types obtained with <code>typeof</code> in JavaScript</li>
+  <li>The most commonly used ones are:
+    <ul>
+      <li><strong>boolean</strong>
+        <ul>
+          <li>Values <code>true</code> or <code>false</code></li>
+          <li>Example: <code>let example: boolean = true</code></li>
+        </ul>
+      </li>
+      <li><strong>number</strong>
+        <ul>
+          <li>Does not differentiate between integers and floating points</li>
+          <li>Example: <code>let example: number = 10</code></li>
+        </ul>
+      </li>
+      <li><strong>string</strong>
+        <ul>
+          <li>Text values</li>
+          <li>Example: <code>let example: string = "hello world"</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Array</h2>
+<ul>
+  <li>Represents lists of data</li>
+  <li>Ideally with elements of the same type</li>
+  <li>Syntax:
+    <ul>
+      <li><code>number[]</code>
+        <ul>
+          <li>Array of numbers</li>
+        </ul>
+      </li>
+      <li><code>Array&lt;number&gt;</code>
+        <ul>
+          <li>Another syntax for array</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>These are the most basic primitive types in TypeScript, which will be used to complement custom types or when we do not need more complex types.</p>
+
+<h2>Concept</h2>
+<ul>
+  <li>Inference means that TypeScript can automatically detect the types of variables and values without needing to declare them explicitly</li>
+  <li>This brings advantages such as:
+    <ul>
+      <li>Autocompleting code</li>
+      <li>Detecting errors during development</li>
+      <li>Having more control over the data</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>How It Works</h2>
+<ul>
+  <li>When we explicitly declare values, TypeScript understands their types
+    <ul>
+      <li>Example: <code>const name = "John"</code> -> String</li>
+    </ul>
+  </li>
+  <li>It also infers types of functions and objects
+    <ul>
+      <li>Example: function with parameters and return</li>
+      <li>Example: object with defined properties</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Benefits</h2>
+<ul>
+  <li>We don't need to manually type everything</li>
+  <li>We gain productivity and code quality</li>
+  <li>The editor automatically shows types</li>
+  <li>It works even in .js files</li>
+</ul>
+
+<h2>Observations</h2>
+<ul>
+  <li>TypeScript doesn't allow dynamically changing types afterward</li>
+  <li>JavaScript still allows dynamic and flexible types</li>
+  <li>But the editor can infer and show types even in JS</li>
+</ul>
+
+<h2>How to Install and Use TypeScript</h2>
+<p>Installing and using TypeScript is straightforward. Here's a step-by-step guide:</p>
+
+<h3>Installation</h3>
+<p>npm init</p>
+<p>npm i --save-dev typescript</p>
+<ol>
+  <li>Make sure you have Node.js installed on your system.</li>
+  <li>Open your terminal or command prompt.</li>
+  <li>Install TypeScript globally using npm (Node Package Manager):
+    <pre><code>npm install -g typescript</code></pre>
+  </li>
+  <li>Once installed, you can verify the installation by checking the TypeScript version:
+    <pre><code>tsc -v</code></pre>
+  </li>
+</ol>
+
+<h3>Usage</h3>
+<ol>
+  <li>Create a new TypeScript file with a <code>.ts</code> extension, for example, <code>app.ts</code>.</li>
+  <li>Write your TypeScript code in this file. TypeScript syntax is similar to JavaScript, with additional type annotations.</li>
+  <li>To compile your TypeScript code into JavaScript, run the TypeScript compiler (tsc) followed by the filename:
+    <pre><code>tsc app.ts</code></pre>
+  </li>
+  <li>This will generate a JavaScript file with the same name (e.g., <code>app.js</code>).</li>
+  <li>You can now run the JavaScript file using Node.js or in the browser as usual.</li>
+</ol>
+
+<h3>Configuration</h3>
+<p>Optionally, you can create a <code>tsconfig.json</code> file in your project directory to configure TypeScript settings. This file allows you to specify compiler options, such as target ECMAScript version, module system, output directory, and more. Here's an example <code>tsconfig.json</code> file:</p>
+
+<pre><code>{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}</code></pre>
+
+<p>This configuration specifies that TypeScript should target ECMAScript 5, use the CommonJS module system, and output compiled files to the <code>dist</code> directory. It also includes TypeScript files from the <code>src</code> directory while excluding files from the <code>node_modules</code> directory.</p>
+
+<p>By following these steps, you can easily install and start using TypeScript in your projects.</p>
+
+<h2>Compiling TypeScript</h2>
+<ul>
+  <li>Open your terminal or command prompt.</li>
+  <li>Navigate to the directory where your TypeScript file is located.</li>
+  <li>Run the following command to compile the TypeScript file into JavaScript:
+    <pre><code>tsc filename.ts</code></pre>
+    Replace <code>filename.ts</code> with the name of your TypeScript file.
+  </li>
+  <li>After running the command, you should see a new JavaScript file in the same directory with the same name but with a <code>.js</code> extension, for example, <code>app.js</code>.</li>
+</ul>
+
+<p>Now you can run the generated JavaScript file using Node.js or include it in your HTML files as you would with any other JavaScript file.</p>
+
+
+  
+</body>
+</html>
